@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <form>
+        用户名：<input type="text" name="username" value="请输入用户名" /><br>
+        密码：<input type="password" name="password" /><br>
+        <!-- name是表单元素的名字 这里性别单选按钮必须有相同名字的name才可以实现多选一 -->
+        <!-- 单选复选按钮可以设置默认checked属性 默认选择 -->
+        性别：<input type="radio" name="sex" value="男" checked="checked" />男&nbsp;<input type="radio" name="sex"
+            value="女" />女<br>
+        爱好：吃饭<input type="checkbox" />睡觉<input type="checkbox" />打豆豆<input type="checkbox" /><br>
+        <input type="submit" value="注册">
+        <input type="reset">
+        <input type="button" value="获取短信验证码"><br>
+        上传头像:<input type="file"><br>
+        <!-- <label for="nan">男</label>
+        <input type="radio" name="sex" id="nan">
+        <label for="nv">女</label>
+        <input type="radio" name="sex" id="nv"> -->
+        <label for="text">用户名：</label><input type="text" id="text"><br>
+        城市：
+        <select>
+            <option>福州</option>
+            <option>南昌</option>
+            <option selected="selected">吉安</option>
+            <option>九江</option>
+            <option>上饶</option>
+        </select><br>
+        说明：<textarea></textarea>
+
+
+
+    </form>
+
+</body>
+
+</html>

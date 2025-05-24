@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 标签选择器:选出所有的相同标签 */
+        p {
+            color: #615ca0;
+            font-size: 70px;
+        }
+
+        /* 类选择器：样式点定义  结构类（class）调用  一个或多个 开发最常用 */
+        .red {
+            color: hsl(0, 80%, 50%);
+        }
+
+        /* id选择器：样式#定义，结构id调用，只能调用一次 */
+        #purple {
+            color: purple;
+        }
+
+        /* *通配符选择器:把所有的元素使用样式 */
+        * {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>有点意思</p>
+    <div class="red">我是第一个div</div>
+    <div>我是第二个div</div>
+    <ul>
+        <li class="red">大家好</li>
+        <li id="purple">我是vae</li>
+        <li>我打一下岔</li>
+        <li>请你和我一起</li>
+    </ul>
+</body>
+
+</html>

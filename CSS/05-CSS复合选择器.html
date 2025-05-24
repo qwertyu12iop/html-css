@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*后代选择器    元素1 元素2{}*/
+        ol li {
+            color: blue;
+        }
+
+        .nav li a {
+            color: pink;
+
+        }
+
+        /*子选择器  只能选择作为某元素的最近一级子元素  元素1>元素2 */
+        .hi>a {
+            color: aqua;
+        }
+
+        /*并集选择器  选择多组标签 为他们定义相同的样式 元素1，元素2{}*/
+        div,
+        p,
+        .pig li {
+            color: chocolate;
+        }
+
+        /* 伪类选择器 向某些选择器添加特殊效果 :表示 */
+        /*链接伪类选择器： 
+          未访问的链接 a:link
+          选择点击过的链接 a:visited
+          选择鼠标经过的链接 a:hover
+          鼠标正在按下还没有弹起 a:active */
+        /* focus伪类选择器  获取焦点的表单元素*/
+        input:focus {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">哈哈哈哈></a></li>
+        <li><a href="#">哈哈哈哈></a></li>
+    </ul>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+    </ol>
+
+
+    <div class="hi">
+        <a href="#">儿子</a>
+        <p>
+            <a href="#">孙子</a>
+        </p>
+    </div>
+
+
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+</body>
+
+</html>
