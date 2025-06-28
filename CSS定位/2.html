@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative-parent {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ddd;
+        }
+
+        .absolute-child {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative-parent">
+        <div class="absolute-child">关闭按钮</div>
+    </div>
+</body>
+
+</html>
